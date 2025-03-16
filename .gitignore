@@ -1,5 +1,31 @@
-.env
-/.env
+# 🛑 Node.js Dependencies (these can be reinstalled with npm install)
+node_modules/
+package-lock.json
 
-./node_modules
-/node_modules
+# 🛑 Environment Variables (Protects Your Database Credentials)
+.env
+
+# 🛑 Logs (Prevents storing unnecessary logs)
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 🛑 OS-Specific Files (Windows, macOS, Linux junk files)
+.DS_Store
+Thumbs.db
+
+# 🛑 Editor-Specific Files (VSCode, JetBrains, etc.)
+.vscode/
+.idea/
+*.swp
+
+# 🛑 Compiled and Cache Files
+dist/
+build/
+.cache/
+coverage/
+
+# 🛑 MySQL Database Dumps (If you export your DB, don't track it)
+*.sql
